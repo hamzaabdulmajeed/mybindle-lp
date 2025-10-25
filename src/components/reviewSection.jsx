@@ -8,7 +8,7 @@ function ReviewSection({ title, cards }) {
   const showMore = () => {
     setVisibleCount(cards.length);
   };
-  
+
   return (
     <div className='w-full bg-[#F2F2F2] py-16 md:py-20 px-4 md:px-8'>
       <div className="max-w-6xl mx-auto">
@@ -21,13 +21,13 @@ function ReviewSection({ title, cards }) {
           {cards.slice(0, visibleCount).map((c, i) => (
             <div
               key={i}
-              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              className="bg-[#F2F2F2] p-6 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
             >
-              <div className="text-yellow-500 mb-3 text-xl">
+              <div className=" mb-3 text-xl">
                 {"⭐".repeat(c.rating)}
                 {"☆".repeat(5 - c.rating)}
               </div>
-              <p className="text-gray-700 italic mb-4 text-base leading-relaxed">
+              <p className="text-gray-700 mb-4 text-base leading-relaxed">
                 "{c.comment}"
               </p>
               <div className="flex items-center gap-3">
@@ -48,7 +48,7 @@ function ReviewSection({ title, cards }) {
           <div className="flex justify-center mt-10">
             <button
               onClick={showMore}
-              className="bg-[#FF5349] text-white px-12 py-4 text-base font-bold rounded-lg shadow-lg hover:scale-105 transition-transform"
+              className="bg-[#F2F2F2] text-[#FF5349] px-12 py-4 text-base font-bold rounded-lg shadow-lg hover:scale-105 transition-transform"
             >
               See More
             </button>

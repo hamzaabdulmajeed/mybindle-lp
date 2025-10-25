@@ -5,9 +5,9 @@ export default function Footer() {
     return (
         <section className="w-full bg-[#F2F2F2] py-8 sm:py-12 md:py-16 px-4 md:px-8">
             <div className="max-w-6xl mx-auto">
-                <div className="bg-[#FF5349] pt-8 sm:pt-10 md:pt-12 rounded-t-2xl sm:rounded-t-3xl overflow-hidden">
-                    <div className="flex flex-col lg:flex-row justify-between items-center lg:items-end text-white px-4 sm:px-6 md:px-10 lg:px-12 pb-0">
-                        <div className="flex-1 space-y-4 sm:space-y-5 md:space-y-6 text-center lg:text-left mb-8 lg:mb-0">
+                <div className="bg-[#FF5349] md:h-[350px] pt-8 sm:pt-10 md:pt-12 rounded-t-2xl sm:rounded-t-3xl ">
+                    <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start text-white px-4 sm:px-6 md:px-10 lg:px-12 pb-0">
+                        <div className="flex-2 space-y-4 sm:space-y-5 md:space-y-6 text-center lg:text-left mb-8 lg:mb-0">
                             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight px-2">
                                 Join the Fun – Download<br className="hidden sm:block" />
                                 MyBindle Now!
@@ -18,10 +18,10 @@ export default function Footer() {
                                 of a Community That's Always Evolving!
                             </p>
                             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 pt-2 px-2">
-                                <button className="flex items-center gap-2 sm:gap-3 bg-white rounded-lg sm:rounded-xl px-4 sm:px-5 py-2.5 sm:py-3 shadow-md hover:shadow-xl hover:scale-105 transition-all w-full sm:w-auto max-w-xs">
+                                <button className="flex items-center gap-2 sm:gap-3 bg-white rounded-xl sm:rounded-xl px-2 sm:px-5 py-1 sm:py-3 shadow-md hover:shadow-xl hover:scale-105 transition-all w-full sm:w-auto max-w-xs">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="w-5 h-5 sm:w-6 sm:h-6 text-black flex-shrink-0"
+                                        className="w-5 h-5 sm:w-6 sm:h-6 text-green-500 flex-shrink-0"
                                         fill="currentColor"
                                         viewBox="0 0 24 24"
                                     >
@@ -34,7 +34,7 @@ export default function Footer() {
                                         <span className="text-xs sm:text-sm font-bold text-black">App Store</span>
                                     </div>
                                 </button>
-                                <button className="flex items-center gap-2 sm:gap-3 bg-white rounded-lg sm:rounded-xl px-4 sm:px-5 py-2.5 sm:py-3 shadow-md hover:shadow-xl hover:scale-105 transition-all w-full sm:w-auto max-w-xs">
+                                <button className="flex items-center gap-2 sm:gap-3 bg-white rounded-xl sm:rounded-xl px-2 sm:px-5 py-1 sm:py-3 shadow-md hover:shadow-xl hover:scale-105 transition-all w-full sm:w-auto max-w-xs">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         className="w-5 h-5 sm:w-6 sm:h-6 text-green-500 flex-shrink-0"
@@ -52,21 +52,17 @@ export default function Footer() {
                                 </button>
                             </div>
                         </div>
-                        <div className="hidden lg:flex items-end gap-8 xl:gap-12 pb-0">
-                            <div className="flex items-end">
-                                <img
-                                    src={iphone2}
-                                    alt="App preview"
-                                    className="w-[140px] h-[140px] xl:w-[180px] xl:h-[180px] drop-shadow-2xl"
-                                />
-                            </div>
-                            <div>
-                                <img
-                                    src={iphone1}
-                                    alt="App preview main"
-                                    className="w-[280px] h-[336px] xl:w-[340px] xl:h-[408px] drop-shadow-2xl"
-                                />
-                            </div>
+                        <div className="flex-1 lg:w-[300px] lg:flex gap-8 xl:gap-12 pb-0  relative ">
+                            <img
+                                src={iphone2}
+                                alt="App preview"
+                                className="absolute top-[122px] w-[10px] h-[200px] xl:w-[180px] xl:h-[180px] drop-shadow-2xl"
+                            />
+                            <img
+                                src={iphone1}
+                                alt="App preview main"
+                                className="absolute right-[-65px] w-[20px] h-[336px] xl:w-[240px] xl:h-[302px] drop-shadow-2xl"
+                            />
                         </div>
                     </div>
                 </div>
